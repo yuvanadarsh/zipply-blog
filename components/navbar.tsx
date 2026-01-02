@@ -12,11 +12,7 @@ export default function Navbar() {
             </Link>
 
             <div className="flex items-center gap-1">
-              <Link
-                href="https://zipply.dev/"
-                target="_blank"
-                className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-blue-500 hover:opacity-80 transition-opacity"
-              >
+              <Link href="https://zipply.dev/" className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-blue-500 hover:opacity-80 transition-opacity">
                 Zipply
               </Link>
               <Link href="/" className="text-slate-400 text-xl font-medium hover:text-slate-200 transition-colors">
