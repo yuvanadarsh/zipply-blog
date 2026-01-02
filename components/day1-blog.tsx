@@ -8,7 +8,7 @@ export default function Blog() {
         {/* Header */}
         <header className="mb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-6">
-            <span>Engineering Update</span>
+            <span>Build Update</span>
             <span className="w-1 h-1 rounded-full bg-emerald-400" />
             <span>January 2, 2026</span>
           </div>
@@ -22,6 +22,50 @@ export default function Blog() {
 
         {/* Content */}
         <article className="prose prose-invert prose-slate max-w-none">
+          <div className="mb-16 p-8 rounded-2xl bg-slate-900/50 border border-slate-800 backdrop-blur-sm relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+            <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+              <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-lg">1</span>
+              Buying and setting up domains
+            </h2>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              Finding the perfect domain is really difficult. Sometimes it takes days to find the right domain name, but with a little bit of openmindedness and persistence, you can find the right
+              domain name and even get it at a good price. I used tools like Google Gemini to prompt some names for the project and while it is very bland, it offers a silly but unique name. I managed
+              to get the name "Zipply" after about 3 iterations. <br></br>
+              <br></br>To secure the domain and verify it wasn't taken by anyone else, I used{" "}
+              <a href="https://namecheap.com" target="_blank" rel="noopener noreferrer" className="underline">
+                namecheap.com
+              </a>{" "}
+              to find zipply.dev through their advanced domain search
+            </p>
+
+            <div className="flex flex-col md:flex-row gap-8 items-center">
+              <div className="flex-1 space-y-4">
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  We implemented a centered "Blog" link with a custom hover animation. Instead of a simple color change, we added a progressive underline that draws itself from left to right.
+                </p>
+                <div className="p-4 bg-slate-800/50 rounded-lg border border-slate-700/50">
+                  <span className="text-slate-500 text-xs uppercase tracking-wider font-semibold mb-2 block">Implementation Details</span>
+                  <p className="text-slate-300 text-sm">
+                    Typography: <span className="text-emerald-300 font-mono">text-xl font-bold</span> (Matching Brand)
+                    <br />
+                    Animation: <span className="text-emerald-300 font-mono">0.3s ease-out</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative shrink-0 p-8 bg-slate-950 rounded-xl border border-slate-800">
+                <button className="text-xl font-bold text-slate-300 relative group">
+                  Blog
+                  <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-blue-400 scale-x-100 origin-left" />
+                </button>
+                <p className="text-center text-xs text-slate-500 mt-4">(Static Preview)</p>
+              </div>
+            </div>
+          </div>
+
           {/* Section 1: The Spotlight */}
           <div className="mb-16 p-8 rounded-2xl bg-slate-900/50 border border-slate-800 backdrop-blur-sm relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

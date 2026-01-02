@@ -26,7 +26,14 @@ export default function Home() {
               the new blog navigation.
             </p>
 
-            <div className="flex items-center text-sm font-medium text-indigo-400 transition-colors group-hover:text-indigo-300">
+            <div className="flex gap-2 flex-wrap">
+              <span className="inline-flex items-center rounded-full border border-white bg-white text-black px-2.5 py-0.5 text-xs font-medium">AI</span>
+              <span className="inline-flex items-center rounded-full border border-[#4C8DE9] bg-[#4C8DE9] text-black px-2.5 py-0.5 text-xs font-medium">Gemini</span>
+              <span className="inline-flex items-center rounded-full border border-[#60B486] bg-[#60B486] text-black px-2.5 py-0.5 text-xs font-medium">Antigravity</span>
+              <span className="inline-flex items-center rounded-full border border-[#FF7F02] bg-[#FF7F02] text-black px-2.5 py-0.5 text-xs font-medium">Github</span>
+            </div>
+
+            <div className="mt-6 flex items-center text-sm font-medium text-indigo-400 transition-colors group-hover:text-indigo-300">
               Open Article
               <svg className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
